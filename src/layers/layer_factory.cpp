@@ -15,19 +15,19 @@ std::shared_ptr<Layer> createLayer(
 ){
     if(layerEngine=="simple"){
         return CreateSimpleLayer(nIn,nOut,synapses);
-    /*     
+         
     }else if(layerEngine=="par_for_naive"){
         return CreateParForNaiveLayer(nIn,nOut,synapses);
-        
+      
     }else if(layerEngine=="par_for_atomic"){
         return CreateParForAtomicLayer(nIn,nOut,synapses);
 
     }else if(layerEngine=="clustered"){
         return CreateClusteredLayer(nIn,nOut,synapses);
-        
+       
     }else if(layerEngine=="par_for_clustered"){
         return CreateParForClusteredLayer(nIn,nOut,synapses);
-        
+    /*   
     }else if(layerEngine=="gpu_clustered"){
         return CreateGPUClusteredLayer(nIn,nOut,synapses);
     */
