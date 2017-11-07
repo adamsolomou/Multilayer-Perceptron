@@ -1,0 +1,60 @@
+ Loading layer 1 from file w/n_16_16.bin using engine simple
+
+real	0m0.226s
+user	0m0.220s
+sys	0m0.020s
+ Loading layer 1 from file w/n_32_32.bin using engine simple
+
+real	0m0.153s
+user	0m0.156s
+sys	0m0.000s
+ Loading layer 1 from file w/n_64_64.bin using engine simple
+
+real	0m0.157s
+user	0m0.160s
+sys	0m0.000s
+ Loading layer 1 from file w/n_128_128.bin using engine simple
+
+real	0m0.182s
+user	0m0.184s
+sys	0m0.000s
+ Loading layer 1 from file w/n_256_256.bin using engine simple
+
+real	0m0.242s
+user	0m0.240s
+sys	0m0.004s
+ Loading layer 1 from file w/n_512_512.bin using engine simple
+
+real	0m0.368s
+user	0m0.388s
+sys	0m0.000s
+ Loading layer 1 from file w/n_1024_1024.bin using engine simple
+
+real	0m0.617s
+user	0m0.636s
+sys	0m0.008s
+ Loading layer 1 from file w/n_2048_2048.bin using engine simple
+
+real	0m1.189s
+user	0m1.188s
+sys	0m0.008s
+ Loading layer 1 from file w/n_4096_4096.bin using engine simple
+
+real	0m2.191s
+user	0m2.224s
+sys	0m0.004s
+ Loading layer 1 from file w/n_8192_8192.bin using engine simple
+
+real	0m5.089s
+user	0m5.068s
+sys	0m0.044s
+ Loading layer 1 from file w/n_16384_16384.bin using engine simple
+
+real	0m13.510s
+user	0m13.372s
+sys	0m0.152s
+ Loading layer 1 from file w/n_32768_32768.bin using engine simple
+
+real	0m34.025s
+user	0m33.456s
+sys	0m0.580s

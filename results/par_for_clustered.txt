@@ -1,0 +1,35 @@
+ Loading layer 1 from file w/n_2048_16384.bin using engine par_for_clustered
+
+real	0m1.262s
+user	0m26.060s
+sys	0m4.448s
+ Loading layer 1 from file w/n_2048_8192.bin using engine par_for_clustered
+
+real	0m0.508s
+user	0m10.344s
+sys	0m2.856s
+ Loading layer 1 from file w/n_2048_4096.bin using engine par_for_clustered
+
+real	0m0.317s
+user	0m5.712s
+sys	0m2.176s
+ Loading layer 1 from file w/n_2048_2048.bin using engine par_for_clustered
+
+real	0m0.194s
+user	0m2.640s
+sys	0m2.668s
+ Loading layer 1 from file w/n_2048_1024.bin using engine par_for_clustered
+
+real	0m0.152s
+user	0m2.132s
+sys	0m1.324s
+ Loading layer 1 from file w/n_2048_512.bin using engine par_for_clustered
+
+real	0m0.128s
+user	0m1.172s
+sys	0m1.608s
+ Loading layer 1 from file w/n_2048_256.bin using engine par_for_clustered
+
+real	0m0.098s
+user	0m0.456s
+sys	0m1.940s
