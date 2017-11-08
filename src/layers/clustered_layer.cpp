@@ -18,7 +18,7 @@ public:
     struct my_struct
     {
         //uint16_t dst; //output (dst) neuron 
-        std::vector<w_s_pair> edges;  
+        std::vector<w_s_pair> edges;
     };
 
     std::vector<my_struct> dst_nodes;
@@ -33,7 +33,6 @@ public:
         , m_synapses(synapses)
         , dst_nodes(m_nOut) 
     {   
-        //std::vector<my_struct> dst_nodes(m_nOut);
         for(unsigned i=0; i<m_synapses.size(); i++){
             w_s_pair tmp; //declare a temporary variable 
             tmp.w = m_synapses[i].weight; 
@@ -56,8 +55,6 @@ public:
         int8_t *pOut        // Values of output neurons in -127..+127
     ) const
     {        
-        //std::vector<int32_t> acc(m_nOut, 0); // Create a working vector
-
         for(unsigned i=0; i<m_nOut; i++){ //loop over destination nodes 
             int32_t acc = 0; //accumulation variable 
             for(unsigned j=0; j<dst_nodes[i].edges.size(); j++){ //edges for this destination 

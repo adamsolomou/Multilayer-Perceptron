@@ -34,13 +34,16 @@ public:
         , m_synapses(synapses)
         , dst_nodes(m_nOut) 
     {   
-        //std::vector<my_struct> dst_nodes(m_nOut);
+        tbb::parallel_for(0u, m_nOut, [&](unsigned i){
+            dst_nodes[i].edges.reserve(m_nIn);
+        }); 
+
         for(unsigned i=0; i<m_synapses.size(); i++){
             w_s_pair tmp; //declare a temporary variable 
             tmp.w = m_synapses[i].weight; 
             tmp.s = m_synapses[i].src; 
 
-            dst_nodes[ m_synapses[i].dst ].edges.push_back(tmp); 
+            dst_nodes[ m_synapses[i].dst ].edges.emplace_back(tmp); 
         }
     }
     const char *name() const
@@ -57,8 +60,6 @@ public:
         int8_t *pOut        // Values of output neurons in -127..+127
     ) const
     {        
-        //std::vector<int32_t> acc(m_nOut, 0); // Create a working vector
-
         tbb::parallel_for(0u, m_nOut, [&](unsigned i){
             int32_t acc = 0; //accumulation variable 
             for(unsigned j=0; j<dst_nodes[i].edges.size(); j++){ //edges for this destination 
