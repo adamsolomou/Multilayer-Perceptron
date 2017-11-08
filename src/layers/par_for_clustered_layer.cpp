@@ -34,9 +34,9 @@ public:
         , m_synapses(synapses)
         , dst_nodes(m_nOut) 
     {   
-        // tbb::parallel_for(0u, m_nOut, [&](unsigned i){
-        //     dst_nodes[i].edges.reserve(m_nIn);
-        // }); 
+        for(unsigned i=0; i<m_nOut; i++){
+            dst_nodes[i].edges.reserve(m_nIn);
+        } 
 
         for(unsigned i=0; i<m_synapses.size(); i++){
             w_s_pair tmp; //declare a temporary variable 
