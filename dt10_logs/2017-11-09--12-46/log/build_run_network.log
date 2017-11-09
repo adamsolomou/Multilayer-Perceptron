@@ -1,0 +1,7 @@
+src/tools/run_network.cpp: In function ‘int main(int, char**)’:
+src/tools/run_network.cpp:22:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             if(colon!=std::string::npos){
+                     ^
+src/tools/run_network.cpp:46:26: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for(int i=0;i<layers.size();i++){
+                          ^
