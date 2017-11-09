@@ -1,0 +1,8 @@
+mkdir: cannot create directory ‘bin’: File exists
+mkdir -p bin
+g++ -g -O3 -I include -Wno-deprecated-declarations -std=c++11 -o bin/print_network_as_dot src/tools/print_network_as_dot.cpp src/util/layer_io.cpp  -ltbb
+mkdir -p bin
+g++ -g -O3 -I include -Wno-deprecated-declarations -std=c++11 -o bin/print_layer_as_text src/tools/print_layer_as_text.cpp src/util/layer_io.cpp  -ltbb
+mkdir -p bin
+g++ -g -O3 -I include -Wno-deprecated-declarations -std=c++11 -o bin/print_layer_as_dot src/tools/print_layer_as_dot.cpp src/util/layer_io.cpp  -ltbb
+make: 'bin/run_network' is up to date.
