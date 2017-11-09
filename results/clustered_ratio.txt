@@ -1,0 +1,45 @@
+ Loading layer 1 from file w/n_128_32768.bin using engine clustered
+
+real	0m11.724s
+user	0m11.720s
+sys	0m0.008s
+ Loading layer 1 from file w/n_256_16384.bin using engine clustered
+
+real	0m3.954s
+user	0m3.956s
+sys	0m0.004s
+ Loading layer 1 from file w/n_512_8192.bin using engine clustered
+
+real	0m1.415s
+user	0m1.408s
+sys	0m0.012s
+ Loading layer 1 from file w/n_1024_4096.bin using engine clustered
+
+real	0m0.595s
+user	0m0.588s
+sys	0m0.008s
+ Loading layer 1 from file w/n_2048_2048.bin using engine clustered
+
+real	0m0.243s
+user	0m0.244s
+sys	0m0.004s
+ Loading layer 1 from file w/n_4096_1024.bin using engine clustered
+
+real	0m0.118s
+user	0m0.112s
+sys	0m0.008s
+ Loading layer 1 from file w/n_8192_512.bin using engine clustered
+
+real	0m0.062s
+user	0m0.056s
+sys	0m0.008s
+ Loading layer 1 from file w/n_16384_256.bin using engine clustered
+
+real	0m0.036s
+user	0m0.020s
+sys	0m0.012s
+ Loading layer 1 from file w/n_32768_128.bin using engine clustered
+
+real	0m0.023s
+user	0m0.020s
+sys	0m0.000s

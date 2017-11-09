@@ -1,0 +1,45 @@
+ Loading layer 1 from file w/n_128_32768.bin using engine par_for_atomic
+
+real	0m10.027s
+user	5m34.040s
+sys	0m25.120s
+ Loading layer 1 from file w/n_256_16384.bin using engine par_for_atomic
+
+real	0m5.975s
+user	3m24.824s
+sys	0m9.520s
+ Loading layer 1 from file w/n_512_8192.bin using engine par_for_atomic
+
+real	0m3.557s
+user	2m2.092s
+sys	0m5.048s
+ Loading layer 1 from file w/n_1024_4096.bin using engine par_for_atomic
+
+real	0m2.127s
+user	1m13.072s
+sys	0m2.712s
+ Loading layer 1 from file w/n_2048_2048.bin using engine par_for_atomic
+
+real	0m1.300s
+user	0m43.776s
+sys	0m2.380s
+ Loading layer 1 from file w/n_4096_1024.bin using engine par_for_atomic
+
+real	0m0.828s
+user	0m27.936s
+sys	0m1.176s
+ Loading layer 1 from file w/n_8192_512.bin using engine par_for_atomic
+
+real	0m0.577s
+user	0m19.936s
+sys	0m0.080s
+ Loading layer 1 from file w/n_16384_256.bin using engine par_for_atomic
+
+real	0m0.355s
+user	0m11.948s
+sys	0m0.152s
+ Loading layer 1 from file w/n_32768_128.bin using engine par_for_atomic
+
+real	0m0.242s
+user	0m7.984s
+sys	0m0.128s
