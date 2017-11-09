@@ -33,28 +33,35 @@ public:
         , m_nOut(nOut)
         , m_synapses(synapses)
         , dst_nodes(m_nOut) 
-    {       
-        // for(unsigned i=0; i<m_nOut; i++){
-        //     dst_nodes[i].edges.reserve(m_nIn);
-        // } 
+    {   
+        w_s_pair tmp; //declare a temporary variable 
+        tmp.w = 0; 
+        tmp.s = 0; 
 
-        //std::vector<int32_t> reserved(m_nOut, 0);
-        std::vector<bool> reserved(m_nOut, false); 
+        std::vector<w_s_pair> v_tmp(m_nIn, tmp);
+
+        for(unsigned i=0; i<m_nOut; i++){
+
+            dst_nodes[i].edges = v_tmp; 
+        } 
+
+        std::vector<int32_t> counters(m_nOut, 0);
+        //std::vector<bool> reserved(m_nOut, false); 
 
         for(unsigned i=0; i<m_synapses.size(); i++){
-            if(!reserved[m_synapses[i].dst]){
-                dst_nodes[i].edges.reserve(m_nIn);
-                reserved[ m_synapses[i].dst ] = true; 
-            }
+            // if(!reserved[m_synapses[i].dst]){
+            //     dst_nodes[i].edges.reserve(m_nIn);
+            //     reserved[ m_synapses[i].dst ] = true; 
+            // }
             w_s_pair tmp; //declare a temporary variable 
             tmp.w = m_synapses[i].weight; 
             tmp.s = m_synapses[i].src; 
 
-            // dst_nodes[ m_synapses[i].dst ].edges[ counters[ m_synapses[i].dst] ] = tmp;
+            dst_nodes[ m_synapses[i].dst ].edges[ counters[ m_synapses[i].dst] ] = tmp;
 
-            // counters[ m_synapses[i].dst ] += 1; 
+            counters[ m_synapses[i].dst ] += 1; 
 
-            dst_nodes[ m_synapses[i].dst ].edges.emplace_back(tmp); 
+            //dst_nodes[ m_synapses[i].dst ].edges.emplace_back(tmp); 
         }
     }
     const char *name() const
