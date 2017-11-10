@@ -1,0 +1,38 @@
+
+aes414, 0, Have scripts/create_n512.sh, PASS
+aes414, 1, Have scripts/run_n512_P1.sh, PASS
+aes414, 2, Have scripts/run_n512_P2.sh, PASS
+aes414, 3, Have scripts/run_n512_P4.sh, PASS
+aes414, 4, Have scripts/run_n512_P8.sh, PASS
+aes414, 5, Have scripts/run_n512_P16.sh, PASS
+aes414, 6, Have scripts/run_n512_P32.sh, PASS
+aes414, 7, Have results/pipeline_p_vs_bandwidth.pdf, PASS
+aes414, 8, Have results/dependency_sketch.pdf, PASS
+aes414, 9, Have results/output_dependency_cone.pdf, PASS
+aes414, 10, Have results/single_layer_ratio_vs_time.pdf, PASS
+aes414, 11, Have results/single_layer_n_vs_time.pdf, PASS
+aes414, 12, Have src/layers/par_for_naive*.cpp, PASS
+aes414, 13, Have src/layers/par_for_atomic*.cpp, PASS
+aes414, 14, Have src/layers/clustered*.cpp, PASS
+aes414, 15, Have src/layers/par_for_clustered*.cpp, PASS
+aes414, 16, Compiling bin/generate_sparse_layer, PASS
+aes414, 17, Compiling bin/run_network, PASS
+aes414, 18, Running scripts/create_n512.sh, PASS
+aes414, 19, Built w/n512_00.bin, PASS
+aes414, 20, Built w/n512_31.bin, PASS
+aes414, 21, Running reference version on all the n512 networks, PASS
+aes414, 22, Running p1 version on all the n512 networks, PASS
+aes414, 23, Check w/ref512.bin and w/n512_P1.bin are the same : Check p1 version against ref, PASS
+aes414, 24, Running p8 version on all the n512 networks, PASS
+aes414, 25, Check w/ref512.bin and w/n512_P8.bin are the same : Check p8 version against ref, PASS
+aes414, 26, For 1M input, check time for P1 (10.62) is more than 1.6 x P2 (5.46), PASS
+aes414, 27, For 1M input, check time for P1 (10.62) is more than 2.5 x P4 (3.77), PASS
+aes414, 28, For 1M input, check time for P1 (10.62) is more than 4.5 x P8 (1.95), PASS
+aes414, 29, For 1M input, check time for P1 (10.62) is more than 7.0 x P16 (1.30), PASS
+aes414, 30, For 1M input, check time for P1 (10.62) is more than 10.0 x P32 (0.71), PASS
+aes414, 31, Check w/n2048_ref.bin and w/n2048_naive.bin are different : Check simple version against par_for_naive (should be wrong), PASS
+aes414, 32, Check w/n2048_ref.bin and w/n2048_atomic.bin are the same : Check simple version against par_for_atomic, PASS
+aes414, 33, Check w/n2048_ref.bin and w/n2048_clustered.bin are the same : Check simple version against clustered, PASS
+aes414, 34, Check w/n2048_ref.bin and w/n2048_par_for_clustered.bin are the same : Check simple version against par_for_clustered, PASS
+
+Passed 35 out of 35 tests.
