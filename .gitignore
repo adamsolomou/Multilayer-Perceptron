@@ -1,3 +1,6 @@
+# OSX General
+.DS_Store
+
 *.obj
 *.o
 *.bin
